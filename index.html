@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impic Tools | Make your Life easy AF!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col">
+    <header class="py-6">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Impic</a>
+            <button id="menu-toggle" class="lg:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <ul class="hidden lg:flex space-x-8">
+                <li><a href="#tools" class="text-gray-300 hover:text-white transition duration-300">Tools</a></li>
+                <li><a href="#newsletter" class="text-gray-300 hover:text-white transition duration-300">Newsletter</a></li>
+                <li><a href="#" class="btn-primary px-4 py-2 rounded-md hover:opacity-90 transition duration-300">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section id="hero" class="py-20 text-center">
+            <h1 class="text-5xl font-bold mb-6 text-white">Impic Tools!</h1>
+            <p class="text-xl mb-12 text-gray-300">Discover tools made by members of Impic!</p>
+            <a href="https://www.impic.tech" class="btn-primary px-8 py-3 rounded-md text-lg font-semibold hover:opacity-90 transition duration-300">Join Impic!</a>
+        </section>
+
+        <section id="tools" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-12 text-center text-white">Our Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="toolsGrid">
+                    <!-- Tool cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+        <hr style="color: white;">
+
+        <section id="newsletter" class="py-20 ">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-8 text-white">Stay Updated</h2>
+                <p class="text-xl mb-12 text-gray-300">Subscribe to our newsletter for the latest tools and tech insights</p>
+                <form class="newsletter-form flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <input type="email" placeholder="Enter your email" class="w-full md:w-1/2 text-lg px-4 py-3 rounded-md" required>
+                    <button type="submit" class="btn-primary text-lg px-8 py-3 rounded-md hover:opacity-90 transition duration-300">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <hr style="color: white;">
+    <footer class="py-12 ">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.impic.tech" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-chrome text-xl"></i></a>
+                <a href="https://x.com/Impic_community" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="https://instagram.com/impic.docs" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="https://github.com/impicDevs" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-github text-xl"></i></a>
+            </div>
+            <p class="text-white-400">Made with ❤️ by <a href="https://zaid.impic.tech">Zaid </a> <a href="https://www.impic.tech">@Impic! </a></p>
+        </div>
+    </footer>
+
+   <script src="scripts.js"></script>
+</body>
+</html>
